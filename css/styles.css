@@ -116,6 +116,10 @@ i.call {
   justify-content: center;
   align-items: center;
 }
+.features-page {
+  position: relative;
+  width: 1235px;
+}
 .main-menu {
   color: #FFF;
   padding: 0;
@@ -124,6 +128,7 @@ i.call {
 .menu {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 .menu li {
   padding: 20px;
@@ -131,6 +136,7 @@ i.call {
   text-align: center;
   border-right: 1px solid #000;
   background-color: #293847;
+  transition: all .3s;
 }
 
 .menu li:hover {
@@ -139,16 +145,18 @@ i.call {
 .menu li:last-of-type {
   flex-basis: 30%;
   border-right: 0;
+  padding: 15px;
 }
 .menu li a {
   text-transform: uppercase;
   font-size: 0.9em;
-  font-weight: 300;
+  font-weight: 500;
 }
 .menu .house-bg {
   padding: 16px 20px 15px;
   background-color: #BBB;
-  flex-basis: 10%
+  flex-basis: 10%;
+  transition: all .3s ;
 }
 
 .menu .house-bg:hover {
@@ -157,6 +165,20 @@ i.call {
 
 i.house { font-size: 2em; }
 
-
-
+.orange-border { 
+  border: 1px solid #E85B21; 
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  margin: 0 auto;
+  width: 100%;
+}
 
