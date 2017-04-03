@@ -84,7 +84,10 @@ body {
   font-family: 'Roboto';
   font-size: 16px;
 }
-.logo { width: 165px; }
+.logo {
+  width: 165px;
+  cursor: pointer;
+}
 .container {
   max-width: 1060px;
   margin: 0 auto;
@@ -118,7 +121,6 @@ i.call {
 }
 .features-page {
   position: relative;
-  width: 1235px;
 }
 .main-menu {
   color: #FFF;
@@ -151,7 +153,7 @@ i.call {
 .menu li a {
   text-transform: uppercase;
   font-size: 0.9em;
-  font-weight: 500;
+  font-weight: 300;
 }
 .menu .house-bg {
   padding: 16px 20px 15px;
@@ -167,12 +169,11 @@ i.call {
 
 i.house { font-size: 2em; }
 
-.orange-border { 
-  border: 1px solid #E85B21; 
+.orange-border {
+  border: 1px solid #E85B21;
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-weight: 500;
   transition: all .3s;
 }
 .menu li:last-of-type:hover div {
@@ -214,7 +215,7 @@ i.server-image {
 }
 .main-information {
   display: flex;
-  padding: 90px;
+  padding: 90px 0;
 }
 .hosting {
   display: inline;
@@ -243,6 +244,9 @@ h2 {
   color: #FFF;
   line-height: 2em;
 }
+
+
+
 .bullet {
   margin-right: 10px;
   width: 15px;
@@ -261,28 +265,39 @@ h2 {
 }
 .big-size-price {
   font-size: 6em;
-  font-weight: 500;
   color: #FFF;
   display: inline-block;
   text-align: right;
   vertical-align: middle;
+  font-weight: inherit;
 }
 .little-size-price {
   color: #FFF;
   font-size: 3em;
-  font-weight: 500;
   text-align: right;
+  font-weight: inherit;
 }
 .month-detail {
   color: #E85B21;
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: inherit;
   text-align: right;
 }
 .fixing-items {
   display: flex;
   justify-content: flex-end;
+  font-weight: 500;
 }
+.fixing-items.price-info {
+  justify-content: center;
+  font-weight: 300;
+}
+.price-info .big-size-price { font-size: 2.5em; }
+.price-info .little-size-price {
+  font-size: 1em;
+  text-align: left;
+}
+.price-info .month-detail { font-size: 0.7em; }
 .button-primary {
   background-color: #E85B21;
   text-transform: uppercase;
@@ -301,13 +316,34 @@ h2 {
 .button-primary:hover {
   filter: brightness(120%);
 }
+.container-plans {
+  background-color: #EBEBEB;
+}
+.gray {
+  background: #EBEBEB;
+}
 .card {
   background-color: #FFF;
-  width: 25%;
+  width: 27%;
   display: inline-block;
+  margin-top: -50px;
+  transition: all .3s ease;
 }
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+.card:hover .price-card,
+.card:hover button {
+  background: #E85B21;
+}
+.card:hover .month-detail {
+  color: #FFF;
+}
+
 .plans {
   display: flex;
+  padding-bottom: 50px;
 }
 .plan {
   text-transform: uppercase;
@@ -330,8 +366,7 @@ h2 {
 }
 .price-card {
   background-color: #494949;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
 }
 .little-money {
   display: flex;
@@ -365,15 +400,32 @@ h2 {
   color: #494949;
   font-weight: 300;
   line-height: 35px;
+  padding-bottom: 30px;
 }
 b {
   font-weight: 500;
 }
 .just-features {
- padding-top: 20px;
- padding-bottom: 20px;
- width: 60%;
- margin-left: 60px;
+ padding: 20px 50px;
+}
+.just-features li {
+  position: relative;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.just-features li:last-of-type {
+  margin-bottom: 0;
+}
+.just-features li:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #E85B21;
+  position: absolute;
+  top: 10px;
+  left: -15px;
 }
 .button-card {
   text-transform: uppercase;
@@ -390,6 +442,7 @@ b {
 }
 footer {
   background-color: #283847;
+  padding: 15px;
 }
 .footer-page {
   background-color: #283847;
@@ -414,10 +467,52 @@ footer {
 .footer-list li {
   margin-bottom: 12px;
 }
-i.fa-circle {
+.social-icons i.fa-circle {
   color: #344c62;
 }
 .divider {
   text-align: right;
   margin: 5px 10px;
+}
+.bullet i.fa-check { color: #FFF; }
+.bullet i.fa-circle { color: #E85B21; }
+
+.fa-stack.bullet { font-size: 0.5em; }
+.title {
+  color: #494949;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.8em;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.slider { padding: 50px 0; }
+
+.carousel-wrapper { padding: 0 50px; }
+.carousel-wrapper .owl-carousel.owl-drag .owl-item {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-outer {
+  position: relative;
+}
+.controller {
+  position: absolute;
+  top: 50%;
+  font-size: 3em;
+  transform: translateY(-50%);
+  font-weight: 300;
+  color: #DDD;
+  transition: all .3s;
+}
+.controller:hover {
+  color: #E85B21;
+}
+.controller.left {
+  left: 0;
+}
+.controller.right {
+  right: 0;
 }
