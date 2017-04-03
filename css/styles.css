@@ -128,7 +128,7 @@ i.call {
 .menu {
   display: flex;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
 }
 .menu li {
   padding: 20px;
@@ -180,5 +180,47 @@ i.house { font-size: 2em; }
   object-fit: cover;
   margin: 0 auto;
   width: 100%;
+  filter: brightness(50%);
 }
-
+/*
+.overlay {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}*/
+i.server-image {
+  font-size: 2em;
+  color: #FFF;
+  width: 70px;
+  height: 70px;
+  background-color: #E85B21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.main-information {
+  display: flex;
+  padding: 90px;
+}
+.hosting {
+  display: inline;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+.inline-item {
+  display: inline-block;
+}
+h2 {
+  font-size: 2.5em;
+  color: #FFF;
+}
