@@ -173,6 +173,7 @@ i.house { font-size: 2em; }
   padding-top: 5px;
   padding-bottom: 5px;
   font-weight: 500;
+  transition: all .3s;
 }
 .menu li:last-of-type:hover div {
   border: 1px solid #FFF;
@@ -293,6 +294,10 @@ h2 {
   width: 100%;
   margin-top: 15px;
   cursor: pointer;
+  transition: all .3s;
+}
+.button-primary:hover {
+  filter: brightness(120%);
 }
 .card {
   background-color: #FFF;
@@ -318,19 +323,65 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .price-card {
   background-color: #494949;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .little-money {
   display: flex;
   flex-direction: column;
+  font-weight: 500;
+  color: #FFF;
+  margin-left: 5px;
+  font-size: 1.1em;
 }
 .big-money {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #FFF;
   display: inline;
+  font-weight: 500;
 }
 .full-price {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.month {
+  color: #E85B21;
+  font-size: 0.6em;
+}
+.customer-info {
+  color: #FFF;
+  font-size: 0.7em;
+  text-align: center;
+}
+.features-card {
+  color: #494949;
+  font-weight: 300;
+  line-height: 35px;
+}
+b {
+  font-weight: 500;
+}
+.just-features {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ width: 60%;
+ margin-left: 60px;
+}
+.button-card {
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #B3B3B3;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
 }
