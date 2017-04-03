@@ -180,7 +180,7 @@ i.house { font-size: 2em; }
   object-fit: cover;
   margin: 0 auto;
   width: 100%;
-  filter: brightness(50%);
+  filter: brightness(70%);
 }
 /*
 .overlay {
@@ -223,4 +223,20 @@ i.server-image {
 h2 {
   font-size: 2.5em;
   color: #FFF;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.information {
+  flex-basis: 50%;
+}
+.price {
+  flex-basis: 50%;
+}
+.hosting-features {
+  color: #FFF;
+  line-height: 2em;
+}
+.bullet {
+  margin-right: 10px;
+  width: 15px;
 }
