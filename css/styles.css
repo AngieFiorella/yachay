@@ -141,6 +141,7 @@ i.call {
 
 .menu li:hover {
   background-color: #355069;
+  cursor: pointer;
 }
 .menu li:last-of-type {
   flex-basis: 30%;
@@ -161,6 +162,7 @@ i.call {
 
 .menu .house-bg:hover {
   background-color: #E85B21;
+  cursor: pointer;
 }
 
 i.house { font-size: 2em; }
@@ -171,6 +173,10 @@ i.house { font-size: 2em; }
   padding-top: 5px;
   padding-bottom: 5px;
   font-weight: 500;
+}
+.menu li:last-of-type:hover div {
+  border: 1px solid #FFF;
+  cursor: pointer;
 }
 .background-image {
   position: absolute;
@@ -227,10 +233,10 @@ h2 {
   margin-bottom: 15px;
 }
 .information {
-  flex-basis: 50%;
+  flex-basis: 70%;
 }
 .price {
-  flex-basis: 50%;
+  flex-basis: 30%;
 }
 .hosting-features {
   color: #FFF;
@@ -239,4 +245,92 @@ h2 {
 .bullet {
   margin-right: 10px;
   width: 15px;
+}
+.orange-left {
+  color: #E85B21;
+  text-align: right;
+  font-size: 1.6em;
+  display: block;
+  font-weight: 300;
+}
+.group-price-month {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.big-size-price {
+  font-size: 6em;
+  font-weight: 500;
+  color: #FFF;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+.little-size-price {
+  color: #FFF;
+  font-size: 3em;
+  font-weight: 500;
+}
+.month-detail {
+  color: #E85B21;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.fixing-items {
+  display: flex;
+  justify-content: flex-end;
+}
+.button-primary {
+  background-color: #E85B21;
+  text-transform: uppercase;
+  padding: 15px;
+  color: #FFF;
+  font-size: 1.2em;
+  font-weight: 500;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.card {
+  background-color: #FFF;
+  width: 25%;
+  display: inline-block;
+}
+.plans {
+  display: flex;
+}
+.plan {
+  text-transform: uppercase;
+  color: #E85B21;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.type-plan {
+  font-size: 2em;
+  color: #494949;
+  text-transform: uppercase;
+}
+.title-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-card {
+  background-color: #494949;
+}
+.little-money {
+  display: flex;
+  flex-direction: column;
+}
+.big-money {
+  font-size: 2em;
+  color: #FFF;
+  display: inline;
+}
+.full-price {
+  display: flex;
 }
