@@ -271,11 +271,13 @@ h2 {
   color: #FFF;
   font-size: 3em;
   font-weight: 500;
+  text-align: right;
 }
 .month-detail {
   color: #E85B21;
   font-size: 1.3em;
   font-weight: 500;
+  text-align: right;
 }
 .fixing-items {
   display: flex;
